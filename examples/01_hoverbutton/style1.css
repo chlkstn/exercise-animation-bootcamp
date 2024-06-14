@@ -1,0 +1,18 @@
+.btn {
+  box-sizing: border-box;
+
+  background-color: aqua;
+
+  box-shadow: 5px 10px rgb(116, 116, 192);
+
+  transition: padding 4s, box-shadow 4s, background-color 4s;
+
+  padding: 2rem;
+}
+
+.btn:hover {
+  background-color: greenyellow;
+  box-shadow: 7px 8px rgb(128, 0, 32);
+
+  padding: 4rem;
+}

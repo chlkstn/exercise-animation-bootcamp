@@ -1,0 +1,77 @@
+.card {
+  position: absolute;
+  left: 500px;
+  bottom: 500px;
+  width: 200px;
+  height: 300px;
+}
+
+.card:nth-child(1) {
+  background-color: pink;
+  transform: rotate(0deg);
+  transform-origin: center calc(100% + 5rem);
+}
+
+body:hover {
+  .card:nth-child(1) {
+    background-color: pink;
+    transform: rotate(-30deg);
+    transform-origin: center calc(100% + 5rem);
+    transition: 4s;
+  }
+
+  .card:nth-child(2) {
+    background-color: rgb(156, 98, 189);
+    transform: rotate(-20deg);
+    transform-origin: center calc(100% + 5rem);
+    transition: 4s;
+  }
+
+  .card:nth-child(3) {
+    background-color: rgb(98, 134, 189);
+    transform: rotate(-10deg);
+    transform-origin: center calc(100% + 5rem);
+    transition: transform 4s;
+  }
+  .card:nth-child(4) {
+    background-color: rgb(61, 188, 192);
+    transform: rotate(0deg);
+    transform-origin: center calc(100% + 5rem);
+    transition: transform 4s;
+  }
+
+  .card:nth-child(5) {
+    background-color: rgb(54, 150, 70);
+    transform: rotate(10deg);
+    transform-origin: center calc(100% + 5rem);
+    transition: transform 4s;
+  }
+
+  .card:nth-child(6) {
+    background-color: rgb(82, 212, 70);
+    transform: rotate(20deg);
+    transform-origin: center calc(100% + 5rem);
+    transition: transform 4s;
+  }
+
+  .card:nth-child(7) {
+    background-color: rgb(240, 237, 75);
+    transform: rotate(30deg);
+    transform-origin: center calc(100% + 5rem);
+    transition: transform 4s;
+  }
+
+  .card:nth-child(8) {
+    background-color: rgb(240, 136, 75);
+    transform: rotate(40deg);
+    transform-origin: center calc(100% + 5rem);
+    transition: transform 4s;
+  }
+
+  .card:nth-child(9) {
+    background-color: rgb(204, 20, 20);
+    transform: rotate(50deg);
+    transform-origin: center calc(100% + 5rem);
+    transition: transform 4s;
+  }
+}

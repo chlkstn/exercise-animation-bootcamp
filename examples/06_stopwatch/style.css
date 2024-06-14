@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(223, 217, 217);
+
+  width: 100vw;
+}
+
+main {
+  position: relative;
+
+  left: 300px;
+
+  border: grey solid 1rem;
+  border-radius: 90rem;
+  height: 400px;
+  width: 400px;
+  background-color: white;
+}
+
+.s {
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  background-color: rgb(99, 120, 124);
+  top: 50%;
+  left: 50%;
+  animation-name: clockrotate;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.ms {
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  background-color: rgb(165, 47, 47);
+  top: 50%;
+  left: 50%;
+  animation-name: clockrotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.dot {
+  position: absolute;
+  border-radius: 99rem;
+
+  width: 20px;
+  height: 20px;
+  background-color: rgb(32, 32, 32);
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes clockrotate {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 0% 50%;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: 0% 50%;
+  }
+}

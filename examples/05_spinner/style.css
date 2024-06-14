@@ -1,0 +1,30 @@
+main {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}
+
+aside {
+  position: relative;
+  left: 500px;
+  top: 200px;
+
+  background-color: red;
+  width: 100px;
+  height: 10px;
+
+  animation-name: spinning;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
